@@ -25,7 +25,7 @@ const ProfileView = () => {
 
     }, []);
 
-    console.log("users=====>", userProfile.data.fullName )
+    // console.log("users=====>", userProfile.data.fullName )
 
     return (
         <>
@@ -44,9 +44,9 @@ const ProfileView = () => {
                         borderRadius="md"
                         textAlign="center"
                     >
-                        <Text fontSize="2xl" fontWeight="bold" mb="4">Name: {userProfile.data.fullName}</Text>
+                        <Text fontSize="2xl" fontWeight="bold" mb="4">Name: {userProfile?.data?.fullName}</Text>
                         {/* <Text fontSize="lg" fontWeight="medium" mb="4">Mobile: 123-456-7890</Text> */}
-                        <Text fontSize="lg" fontWeight="medium">Role: {userProfile.data.role}</Text>
+                        <Text fontSize="lg" fontWeight="medium">Role: {userProfile?.data?.role}</Text>
                     </Box>
                 )}
 
